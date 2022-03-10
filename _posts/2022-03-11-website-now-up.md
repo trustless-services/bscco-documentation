@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Introducing Reverie - A ridiculously elegant Jekyll theme
-categories: [Miscellaneous, Jekyll]
+title: Website now up!
+categories: [Announcement]
 excerpt: This is a temporary site to host some documentation about the upcoming release of BSCCO, the lightning network superconductor.
 ---
 
