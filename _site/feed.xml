@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-13T21:06:20+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">BSCCO - Lightning Network Superconductor</title><subtitle>About BSCCO, a tool allowing LN node operators to implement non-HTLC mechanisms for channels</subtitle><author><name>Kishin Kato @ Trustless Services K.K.</name></author><entry><title type="html">Peer to Peer Consensus</title><link href="http://localhost:4000/peer-to-peer-consensus/" rel="alternate" type="text/html" title="Peer to Peer Consensus" /><published>2022-04-30T00:00:00+09:00</published><updated>2022-04-30T00:00:00+09:00</updated><id>http://localhost:4000/peer-to-peer-consensus</id><content type="html" xml:base="http://localhost:4000/peer-to-peer-consensus/"><![CDATA[<h2 id="bip-119-and-the-difficulty-of-updating-global-consensus-rules">BIP-119 and the difficulty of updating global consensus rules</h2>
+
+<p>A new constroversy in the Bitcoin ecosystem is an attempt to introduce BIP-119 (OP_CTV) using the Speedy Trial mechanism, which was used to activate Taproot just one year ago.</p>
+
+<p>Personally, I am a fan of covenants and I support OP_CTV, although I agree that Speedy Trial leaves much to be desired in terms of a coordination mechanism.
+The fact that we glossed over Speedy Trial’s shortcomings when activating Taproot, which most did not and still do not understand, is painfully obvious today.</p>
+
+<p>Introducing new consensus rules globally is quite difficult in Bitcoin, where many will be opposed form risk aversion or simple apathy.</p>
+
+<h2 id="lightning-and-local-consensus">Lightning and ‘local consensus’</h2>
+
+<p>The Lightning Network, comprised of payment channels between two nodes, offers an interesting comparison in terms of applying new consensus rules.
+While in practice we use Bitcoin’s consensus rules so we can enforce Layer 2 transactions on the base layer, one can imagine other ways of agreeing
+with your peer regarding payment channel state.</p>
+
+<p>For instance, we can have channels backed by WBTC on Ethereum, stablecoins issued on Bitcoin, other blockchains, credit, or even databases.
+These may lack the robust trustlessness that BTC on Bitcoin offers, but can potentially make up for that in other ways.
+This is particularly true if the nodes sharing the channel share some trust, or an external enforcement mechanism (e.g. legal contracts).</p>
+
+<p>The best thing is that Lightning allows such experiments without placing the rest of the network at risk.
+And if any liquidity benefits are to be had, those can apply globally.</p>]]></content><author><name>Kishin Kato @ Trustless Services K.K.</name></author><category term="Discussion" /><summary type="html"><![CDATA[BSCCO enables individual Lightning channels, with their respective nodes' consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer.]]></summary></entry><entry><title type="html">The Birth of BSCCO</title><link href="http://localhost:4000/birth-of-bscco/" rel="alternate" type="text/html" title="The Birth of BSCCO" /><published>2022-03-11T00:00:00+09:00</published><updated>2022-03-11T00:00:00+09:00</updated><id>http://localhost:4000/birth-of-bscco</id><content type="html" xml:base="http://localhost:4000/birth-of-bscco/"><![CDATA[<h2 id="virtual-channels-as-a-scaling-mechanism-for-ln">Virtual Channels as a scaling mechanism for LN</h2>
+
+<p>The Lightning Network is often touted as a cheap payment method that enables micropayments on Bitcoin
+without sacrificing on-chain decentralization.</p>
+
+<p>While the latter half is true, whether LN remains cheap indefinitely remains a question.
+Routing each payment comes with a risk of channel closure due to technical difficulties or malice.</p>
+
+<p>The following equation must hold for LN to be viable:</p>
+
+<p>(sum of LN fees) &gt; (sum of on-chain fees for LN channels)</p>
+
+<p>And for each HTLC routed, there exists an equation that node operators should consider:</p>
+
+<p>(expected value gained from HTLC) = P(success)*fee - P(channel close)*cost &gt; 0</p>
+
+<p><em>(Note that this equation ignores the time &amp; resource cost of handling canceled HTLCs,
+which account for the vast majority of payment attempts on the network.)</em></p>
+
+<p>The problem lies herein; in order to route payments from potential bad actors, what would
+the breakeven fee be, and what use cases does that price out? This unfortunate reality stems
+from Lightning Channels necessarily using the blockchain as a settlement mechanism to
+resolve potential disputes.</p>
+
+<p>But what if we didn’t need to go on-chain? Could we reduce costs &amp; improve LN’s efficiency?</p>
+
+<h2 id="introducing-bscco-trust-and-the-lightning-network">Introducing BSCCO: Trust and the Lightning Network</h2>
+
+<p>BSCCO enables individual Lightning channels, with their respective nodes’ consent, to use
+mechanisms other than the Bitcoin blockchain as their settlement layer. In other words,
+you no longer have to use HTLCs, and can instead settle in various ways.</p>
+
+<p>While the Bitcoin blockchain replaces courts and central planners as the final arbiters of
+financial records, there are certainly cases where that level of power is not needed.
+Maybe you trust your counterparty to honor a contract. Maybe your counterpary is a different
+node of yours. In such cases, why use the inflexible Bitcoin blockchain when you could use
+credit, stablecoins, custodial solutions, and more?</p>
+
+<p>The idea behind BSCCO is to provide a generalized tool which can be combined with custom
+logic to enable different types of record keeping for individual channels.</p>
+
+<p>Check the <a href="https://bscco.xyz/roadmap">roadmap</a> for planned release dates.</p>]]></content><author><name>Kishin Kato @ Trustless Services K.K.</name></author><category term="Discussion" /><summary type="html"><![CDATA[BSCCO enables individual Lightning channels, with their respective nodes' consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer.]]></summary></entry><entry><title type="html">Website now up!</title><link href="http://localhost:4000/website-now-up/" rel="alternate" type="text/html" title="Website now up!" /><published>2022-03-10T00:00:00+09:00</published><updated>2022-03-10T00:00:00+09:00</updated><id>http://localhost:4000/website-now-up</id><content type="html" xml:base="http://localhost:4000/website-now-up/"><![CDATA[<h2 id="website-up-for-bscco">Website up for BSCCO!</h2>
+
+<p>This is a temporary site to host some documentation about the upcoming release of BSCCO, the lightning network superconductor.</p>
+
+<p>Project repository will be made public upon initial alpha release.</p>]]></content><author><name>Kishin Kato @ Trustless Services K.K.</name></author><category term="Announcement" /><summary type="html"><![CDATA[This is a temporary site to host some documentation about the upcoming release of BSCCO, the lightning network superconductor.]]></summary></entry></feed>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peer to Peer Consensus – BSCCO - Lightning Network Superconductor – About BSCCO, a tool allowing LN node operators to implement non-HTLC mechanisms for channels</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Peer to Peer Consensus" />
+<meta name="author" content="Kishin Kato @ Trustless Services K.K." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="BSCCO enables individual Lightning channels, with their respective nodes’ consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer." />
+<meta property="og:description" content="BSCCO enables individual Lightning channels, with their respective nodes’ consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer." />
+<link rel="canonical" href="http://localhost:4000/peer-to-peer-consensus/" />
+<meta property="og:url" content="http://localhost:4000/peer-to-peer-consensus/" />
+<meta property="og:site_name" content="BSCCO - Lightning Network Superconductor" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-30T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Peer to Peer Consensus" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kishin Kato @ Trustless Services K.K."},"dateModified":"2022-04-30T00:00:00+09:00","datePublished":"2022-04-30T00:00:00+09:00","description":"BSCCO enables individual Lightning channels, with their respective nodes’ consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer.","headline":"Peer to Peer Consensus","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/peer-to-peer-consensus/"},"url":"http://localhost:4000/peer-to-peer-consensus/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+
+<meta property="og:description" content="BSCCO enables individual Lightning channels, with their respective nodes' consent, to use mechanisms other than the Bitcoin blockchain as their settlement layer." />
+
+<meta name="author" content="BSCCO - Lightning Network Superconductor" />
+
+
+<meta property="og:title" content="Peer to Peer Consensus" />
+<meta property="twitter:title" content="Peer to Peer Consensus" />
+
+
+
+<meta property="og:image" content="http://localhost:4000/images/bscco.svg"/>
+<meta property="twitter:image" content="http://localhost:4000/images/bscco.svg"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="//assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="BSCCO - Lightning Network Superconductor - About BSCCO, a tool allowing LN node operators to implement non-HTLC mechanisms for channels" href="//feed.xml" />
+    <link rel="canonical" href="http://localhost:4000/peer-to-peer-consensus/" />
+
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/svg" sizes="32x32" href="//images/bscco.svg">
+    
+
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="//" class="site-avatar"><img src="//images/bscco.svg" alt="" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="//">BSCCO - Lightning Network Superconductor</a></h1>
+              <p class="site-description">About BSCCO, a tool allowing LN node operators to implement non-HTLC mechanisms for channels</p> 
+            </div>
+
+            <nav>
+              <a href="//">Home</a>
+              <a href="//roadmap">Roadmap</a>
+              <a href="//about">About</a>
+              <a href="//archive">Archive</a>
+              <a href="https://phrygian-seer-3d3.notion.site/BSCCO-86fef96d641c4ff3b9392bba1d132be0">日本語</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          <article class="post detailed">
+  <h1>Peer to Peer Consensus</h1>
+
+  <div>
+    <p class="author_title">Kishin Kato @ Trustless Services K.K.  ·  April 30, 2022</p>
+    
+    <div class="post-tags">
+      
+      
+        <a href="//categories/#Discussion">Discussion</a>
+        
+      
+    </div>
+  </div>
+    
+  <div class="entry">
+    <h2 id="bip-119-and-the-difficulty-of-updating-global-consensus-rules">BIP-119 and the difficulty of updating global consensus rules</h2>
+
+<p>A new constroversy in the Bitcoin ecosystem is an attempt to introduce BIP-119 (OP_CTV) using the Speedy Trial mechanism, which was used to activate Taproot just one year ago.</p>
+
+<p>Personally, I am a fan of covenants and I support OP_CTV, although I agree that Speedy Trial leaves much to be desired in terms of a coordination mechanism.
+The fact that we glossed over Speedy Trial’s shortcomings when activating Taproot, which most did not and still do not understand, is painfully obvious today.</p>
+
+<p>Introducing new consensus rules globally is quite difficult in Bitcoin, where many will be opposed form risk aversion or simple apathy.</p>
+
+<h2 id="lightning-and-local-consensus">Lightning and ‘local consensus’</h2>
+
+<p>The Lightning Network, comprised of payment channels between two nodes, offers an interesting comparison in terms of applying new consensus rules.
+While in practice we use Bitcoin’s consensus rules so we can enforce Layer 2 transactions on the base layer, one can imagine other ways of agreeing
+with your peer regarding payment channel state.</p>
+
+<p>For instance, we can have channels backed by WBTC on Ethereum, stablecoins issued on Bitcoin, other blockchains, credit, or even databases.
+These may lack the robust trustlessness that BTC on Bitcoin offers, but can potentially make up for that in other ways.
+This is particularly true if the nodes sharing the channel share some trust, or an external enforcement mechanism (e.g. legal contracts).</p>
+
+<p>The best thing is that Lightning allows such experiments without placing the rest of the network at risk.
+And if any liquidity benefits are to be had, those can apply globally.</p>
+
+  </div>
+
+  <div>
+    <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text=Peer to Peer Consensus&url=http://localhost:4000/peer-to-peer-consensus/" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u=http://localhost:4000/peer-to-peer-consensus/" target="_blank">Facebook</a></p>
+  </div>
+
+  <!--<div class="date">
+    Written on April 30, 2022
+  </div>-->
+
+  
+</article>
+
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            
+<a href="mailto:kishin@trustless-services.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/trustless-services/bscco-documentation"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/trustless_inc"><i class="svg-icon twitter"></i></a>
+
+
+
+
+
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+I"ï<h3 id="bscco-roadmap">BSCCO Roadmap</h3>
+
+<p>This page contains the planned release schedule for BSCCO.</p>
+
+<p>All dates are tentative and may be postponed due to development delays.</p>
+
+<h4 id="open-alpha-may-31-2022">Open Alpha: May 31, 2022</h4>
+
+<p>BSCCO will initially be released as a c-lightning plugin.</p>
+
+<p>This version will be usable on regtest for testing.</p>
+
+<h4 id="mainnet-beta-july-31-2022">Mainnet Beta: July 31, 2022</h4>
+
+<p>This version will bring mainnet support to BSCCO.</p>
+
+<p>An interactive protocol for establishing a BSCCO channel may be included,
+but may not be, since that doesnâ€™t really <em>need</em> to be defined by the protocol.</p>
+
+<p>We also plan on having at least one simple app built using BSCCO for the beta.</p>
+
+<p>Stay tuned for details.</p>
+
+<h4 id="lnd--umbrel-support-september-31-2022">Lnd &amp; Umbrel support: September 31, 2022</h4>
+
+<p>Support for LND and Umbrel will also come, eventually.</p>
+
+<p>Not prioritizing this until BSCCO works smoothly on c-lightning.</p>
+
+<h4 id="follow-develpment">Follow develpment</h4>
+
+<p>If you are interested in following the development of BSCCO, check out the 
+following links:</p>
+
+<p>This is who to pester if things are behind schedule:
+Twitter: <a href="https://twitter.com/btc_dakara">@btc_dakara</a></p>
+
+<p>This is who to follow for releases only:
+Twitter: <a href="https://twitter.com/trustless_inc">@trustless_inc</a></p>
+
+<p>Join this Discord server to discuss things:
+Discord: <em>link in preparation</em></p>
+:ET

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="170.857 132.511 138.242 88.014" xmlns="http://www.w3.org/2000/svg">
+  <rect x="170.857" y="132.511" width="138.242" height="88.014" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(255, 255, 255);"/>
+  <ellipse style="stroke: rgb(0, 0, 0); paint-order: fill; fill: rgb(56, 55, 55);" cx="240" cy="182.7" rx="65.719" ry="35.471"/>
+  <rect x="174.76" y="170.774" width="130.485" height="12.103" style="stroke: rgb(0, 0, 0); stroke-width: 0px; fill: rgb(56, 55, 55);"/>
+  <ellipse style="stroke: rgb(0, 0, 0); paint-order: fill; fill: rgb(131, 129, 129);" cx="240" cy="172.1" rx="65.719" ry="35.471"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(39, 39, 39); stroke-width: 0px; mix-blend-mode: overlay;" d="M 264.758 138.356 L 299.134 144.024 L 266.176 167.771 L 279.643 170.96 L 218.333 206.045 L 248.102 174.149 C 248.102 174.149 227.901 168.124 228.256 168.124 C 228.611 168.124 264.758 137.647 264.758 138.356 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(245, 255, 47);" d="M 249.746 133.751 L 284.122 139.419 L 251.164 163.166 L 264.631 166.355 L 203.321 201.44 L 233.09 169.544 C 233.09 169.544 212.889 163.519 213.244 163.519 C 213.599 163.519 249.746 133.042 249.746 133.751 Z"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 305.695 182.036 L 305.732 171.461"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 174.316 182.452 L 174.283 171.793"/>
+</svg>

@@ -1,0 +1,9 @@
+I"	<p>BSCCO is a c-lightning plugin that allows users to designate custom logic for each channel, replacing HTLCs with a settlement mechanism of their choice.
+Only recommended for use with trusted peers.</p>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>TBA</li>
+</ul>
+:ET

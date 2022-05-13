@@ -1,0 +1,36 @@
+I"ö<div id="archives">
+
+  <div class="archive-group">
+    
+    <div id="#Announcement"></div>
+    <p></p>
+    
+    <h3 class="category-head">Announcement</h3>
+    <a name="Announcement"></a>
+    
+    <article class="archive-item">
+      <h4><a href="//website-now-up/">Website now up!</a></h4>
+    </article>
+    
+  </div>
+
+  <div class="archive-group">
+    
+    <div id="#Discussion"></div>
+    <p></p>
+    
+    <h3 class="category-head">Discussion</h3>
+    <a name="Discussion"></a>
+    
+    <article class="archive-item">
+      <h4><a href="//peer-to-peer-consensus/">Peer to Peer Consensus</a></h4>
+    </article>
+    
+    <article class="archive-item">
+      <h4><a href="//birth-of-bscco/">The Birth of BSCCO</a></h4>
+    </article>
+    
+  </div>
+
+</div>
+:ET
