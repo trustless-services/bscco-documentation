@@ -10,13 +10,17 @@ This page contains the planned release schedule for BSCCO.
 
 All dates are tentative and may be postponed due to development delays.
 
-#### Open Alpha: May 31, 2022
+#### Open Alpha: June 2022
 
-BSCCO will initially be released as a c-lightning plugin.
+BSCCO will initially be released as a Core Lightning plugin.
 
-This version will be usable on regtest for testing.
+This version will be usable on regtest, testnet, and signet.
 
-#### Mainnet Beta: July 31, 2022
+#### GUI: July 2022
+
+A GUI client for BSCCO, possibly one that runs in the browser.
+
+#### Mainnet Alpha: September 2022
 
 This version will bring mainnet support to BSCCO.
 
@@ -27,11 +31,11 @@ We also plan on having at least one simple app built using BSCCO for the beta.
 
 Stay tuned for details.
 
-#### Lnd & Umbrel support: September 31, 2022
+#### Lnd & Umbrel support: Late 2022 - Early 2023
 
 Support for LND and Umbrel will also come, eventually.
 
-Not prioritizing this until BSCCO works smoothly on c-lightning.
+Not prioritizing this until BSCCO works smoothly on Core Lightning.
 
 #### Follow develpment
 
